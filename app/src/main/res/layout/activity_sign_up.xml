@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D2F3"
+    android:gravity="center_horizontal"
+    tools:context=".signUpActivity">
+
+    <TextView
+        android:id="@+id/YouAre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="39sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YouAre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:background="#ffffff"
+        android:hint="@string/email_id"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:textColorHint="#000000"
+        tools:ignore="RtlSymmetry" />
+
+    <ProgressBar
+        android:id="@+id/prgSign"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btnCreate"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/create"
+        android:textAlignment="center"
+        android:textColor="#FFFCFC"
+        android:textSize="24sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+
+
+
+</RelativeLayout>

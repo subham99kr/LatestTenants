@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D2F3"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/YouAre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="39sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YouAre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:background="#ffffff"
+        android:hint="@string/user_id"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/userPass"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:textColorHint="#000000" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="#FFFCFC"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="#FFFCFC"
+        android:textSize="24sp" />
+
+
+
+    <ProgressBar
+        android:id="@+id/prgLogin"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnSignUp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp" />
+
+
+
+</RelativeLayout>

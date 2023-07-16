@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/hotels"
+        android:title="Hotels"
+        android:icon="@drawable/hotel"/>
+    <item
+        android:id="@+id/searchView"
+        android:title="Search"
+        android:icon="@drawable/sharp_search_24"/>
+    <item
+        android:id="@+id/bookmarks"
+        android:title="Bookmark"
+        android:icon="@drawable/bookmark_added_24"/>
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/identity"/>
+
+</menu>

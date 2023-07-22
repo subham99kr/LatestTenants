@@ -14,4 +14,12 @@
     <string name="title">Title</string>
     <string name="price">Price</string>
     <string name="location">Location</string>
+    <string name="fill_your_house_details">Fill your house details.</string>
+    <string name="rent_per_month">Rent per month</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="discription">Discription</string>
+    <string name="add_image">Add image</string>
+    <string name="upload">Upload</string>
 </resources>
